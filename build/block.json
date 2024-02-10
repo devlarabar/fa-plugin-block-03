@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "name": "femart/custom-block-03",
+  "version": "0.1.0",
+  "title": "FemArt Custom Block 03",
+  "category": "design",
+  "icon": "hammer",
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "mediaID": {
+      "type": "string"
+    },
+    "mediaURL": {
+      "type": "string"
+    }
+  },
+  "textdomain": "femart-custom-block-03",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "keywords": [
+    "03",
+    "FemArt"
+  ]
+}
