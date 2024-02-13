@@ -14,14 +14,16 @@ const Save = (props) => {
         },
     } = props;
 
-    const blockProps = useBlockProps.save();
+    const blockProps = useBlockProps.save({
+        className: "fa-03-image-container"
+    });
     return (
         mediaURL ? (
-            <div class="fa-03-image-container" style={{ backgroundImage: `url(${mediaURL})` }}>
+            <div {...blockProps} style={{ backgroundImage: `url(${mediaURL})` }}>
                 <div class="artist-info">{link ? <a href={link} target="_blank">{name}</a> : name}</div>
             </div>
         ) :
-            <div class="fa-03-image-container">
+            <div {...blockProps}>
                 <div class="artist-info">{link ? <a href={link} target="_blank">{name}</a> : name}</div>
             </div>
     );
