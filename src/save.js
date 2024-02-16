@@ -20,11 +20,11 @@ const Save = (props) => {
     return (
         mediaURL ? (
             <div {...blockProps} style={{ backgroundImage: `url(${mediaURL})` }}>
-                <div class="artist-info">{link ? <a href={link} target="_blank">{name}</a> : name}</div>
+                <div class="artist-info">{link ? <a href={link} target="_blank" rel="noopener">{name}</a> : name}</div>
             </div>
         ) :
             <div {...blockProps}>
-                <div class="artist-info">{link ? <a href={link} target="_blank">{name}</a> : name}</div>
+                <div class="artist-info">{link ? <a href={link} target="_blank" rel="noopener">{name}</a> : name}</div>
             </div>
     );
 };

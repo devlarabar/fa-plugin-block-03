@@ -39,7 +39,7 @@ const Edit = (props) => {
     };
 
     return (
-        <div {...blockProps} className="fa-03-block">
+        <div {...blockProps} className="fa-03-block fa-03-block-edit">
             <div class="fa-03-image-container fa-03-edit-image-container" style={{ backgroundImage: `url(${mediaURL})` }}>
                 <MediaUpload
                     onSelect={onSelectImage}
@@ -50,7 +50,7 @@ const Edit = (props) => {
                             {!mediaID && __('Upload Image', 'femart-custom-block-03')}
                         </Button>
                     )} />
-                <div class="artist-info">{link ? <a href={link} target="_blank">{name}</a> : name}</div>
+                <div class="artist-info-edit">{link ? <a href={link} target="_blank">{name}</a> : name}</div>
             </div>
             <InspectorControls>
                 <PanelBody title="Name">
